@@ -16,6 +16,8 @@ public class Authentication : MonoBehaviour
 
     DatabaseReference databaseReference;
 
+    bool IsSuccess = false;
+
     private void Start()
     {
         uid = PlayerPrefs.GetString("uid");
@@ -69,8 +71,16 @@ public class Authentication : MonoBehaviour
             databaseReference.Child("users").Child(newUser.User.UserId).Child("fullname").SetValueAsync(fullname);
             databaseReference.Child("users").Child(newUser.User.UserId).Child("uid").SetValueAsync(newUser.User.UserId);
 
-            // เปลี่ยน Scene ไปหน้า Login
-            SceneManager.LoadScene("", LoadSceneMode.Single);
+            IsSuccess = true;
         });
+
+        StartCoroutine(LoadScene());
+    }
+
+    IEnumerator LoadScene()
+    {
+        yield return new WaitUntil(() =>IsSuccess);
+        // เปลี่ยน Scene ไปหน้า Login
+        SceneManager.LoadScene("Login", LoadSceneMode.Single);
     }
 }

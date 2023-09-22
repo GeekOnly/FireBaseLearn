@@ -2193,9 +2193,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2011322633}
-        m_TargetAssemblyTypeName: SigninModule, Assembly-CSharp
-        m_MethodName: LoginAction
+      - m_Target: {fileID: 2011322631}
+        m_TargetAssemblyTypeName: LoadSceneModule, Assembly-CSharp
+        m_MethodName: ChangeScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
