@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "4795203919",
+    "firebase_url": "https://fir-learn-ece2b-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fir-learn-ece2b",
+    "storage_bucket": "fir-learn-ece2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4795203919:android:4d6da36a653f099f6d053a",
+        "android_client_info": {
+          "package_name": "com.XSStudio.GameMobileFireBaseLearn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwLkXpDDsR6lh2wCpR0_b4zqafMks5UGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
